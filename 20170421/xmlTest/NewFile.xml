@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 创建xml文件 ，第一行写version版本，encoding编码，standalone是否独立存在，依赖其他文档 -->
+<!-- 需求：定义一个xml文件存储学生的信息(name, age) -->
+
+<!-- 开始标签 -->
+<students>
+	<student>
+		<name>张3</name>
+		<age>17</age>
+	</student>
+	<student>
+	   <name><![CDATA[随便输入什么鬼数据都原样返回给你]]></name>
+	   <age>23</age>
+	</student>
+	<!-- 结束标签，在开始标签的里面的首字母前加/ -->
+</students>
+
+<!-- 小结：注意XML文件的格式要缩进，其注释的格式特殊，整个文件就是一个巨大的树结构 -->

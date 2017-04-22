@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 需求：建联系人 -->
+<!-- 需求：在XML文档中引用schema约束文件 -->
+
+<contacts xmlns="http://520it.com"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:schemaLocation="http://520it.com contactsSchema.xsd">
+
+    <linkman id="1">
+        <name>gujiacun</name>
+        <email>1214822688@qq.com</email>
+        <address>Guangzhou</address>
+        <group>programmer</group>
+    </linkman>
+    <linkman id="2">
+        <name>平手</name>
+        <email>hoshi@broadcast.com</email>
+        <address>Tokyo</address>
+        <group>keyakizaka46</group>
+    </linkman>
+</contacts>
+<!-- 小结：XML文档引用schema文件,暂不要求全部手写 -->

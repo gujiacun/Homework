@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 需求：建联系人 --><!-- 需求：在XML文档中引用dtd约束文件 -->
+<contacts>
+	<linkman id="3">
+		<name>gujiacun</name>
+		<email email="新邮箱@163.com">1214822688@qq.com</email>
+		<address>Guangzhou</address>
+		<group>programmer</group>
+	</linkman>
+	<linkman id="2">
+		<name>平手</name>
+		<email>hoshi@broadcast.com</email>
+		<address>Tokyo</address>
+		<group>keyakizaka46</group>
+	</linkman>
+	<linkman>
+		<name />
+		<email />
+		<address />
+		<group />
+	</linkman>
+	<linkman>
+		<name>manaka</name>
+		<address>Tokyo</address>
+		<group>keyakizaka46</group>
+	</linkman>
+	<linkman>
+		<name>risa</name>
+		<email>keyaki@blog</email>
+		<address>Tokyo</address>
+		<group>keyakizaka46</group>
+	</linkman>
+	<linkwoman>
+		<name>rika</name>
+		<email>404</email>
+		<address>Tokyo</address>
+		<group>keyakizaka46</group>
+	</linkwoman>
+	<linkman name="YUIs" email="keyaki@blog" address="Tokyo" group="keyakizaka46" />
+	<center id="0">
+		<name>秋元康</name>
+		<email>email@</email>
+		<address>Japan</address>
+		<group>坂道系</group>
+	</center>
+</contacts><!-- excited! -->

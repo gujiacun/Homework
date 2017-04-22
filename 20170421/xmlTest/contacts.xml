@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 需求：建联系人 -->
+<!-- 需求：在XML文档中引用dtd约束文件 -->
+<!DOCTYPE contacts SYSTEM "ContactsDts.dtd">
+<contacts>
+	<linkman>
+		<name>gujiacun</name>
+		<email>1214822688@qq.com</email>
+		<address>Guangzhou</address>
+		<group>programmer</group>
+	</linkman>
+	<linkman>
+		<name>平手</name>
+		<email>hoshi@broadcast.com</email>
+		<address>Tokyo</address>
+		<group>keyakizaka46</group>
+	</linkman>
+</contacts>
+<!-- 小结：XML文档引用Dtd文件，linkman中的id不知怎么解决 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
