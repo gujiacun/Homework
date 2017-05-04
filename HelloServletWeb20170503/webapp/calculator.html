@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 建html文件，第一个和第三个框表示输入的数字，第二个框表示运算符，是单选下拉框，第四个框表示结果,等于按钮点击后会出现结果，会跳转到CalcServlet -->
+<meta charset="UTF-8">
+<title>四则运算计算器</title>
+</head>
+<body>
+	<form action="/pss/calc" method="post">
+		<input type="text" name="number01" /> 
+		<select name="operator">
+			<option>+</option>
+			<option>-</option>
+			<option>*</option>
+			<option>/</option>
+		</select> 
+		<input type="text" name="number02" /> 
+		<input type="submit" name="button" /> 
+        <input type="text" name="result" />
+	</form>
+</body>
+</html>

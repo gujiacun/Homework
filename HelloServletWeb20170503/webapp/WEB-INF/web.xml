@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<servlet>
+		<!--为servlet起名 -->
+		<servlet-name>CalcServlet</servlet-name>
+		<!--Servlet类的全限定名 -->
+		<servlet-class>com._520it._06_calc.CalcServlet</servlet-class>
+		
+	</servlet>
+	<servlet-mapping>
+	<!-- 上下两个 servlet-name必须相同-->
+		<servlet-name>CalcServlet</servlet-name>
+		<url-pattern>/calc</url-pattern>
+	</servlet-mapping>
+</web-app>
+   
+
+       

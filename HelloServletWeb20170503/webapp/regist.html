@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登陆页面</title>
+</head>
+<body>
+	<h1>用户注册</h1>
+	<!-- form标签有三个属性，action填网址，提交数据给哪个服务器处理。method填get/post。enctype规定表单数据在发送到服务器前应该如何编码 -->
+	<form action="/pss/regist" method="post"
+		enctype="application/x-www-form-urlencoded">
+		<!-- 注意，input是单标签，建用户名 。表单元素提交必须用name属性，name属性定义input元素的名称-->
+		用户名：<input type="text" name="username"> <br>
+		<!-- 建密码 -->
+		密码：<input type="password" name="password"><br>
+		<!-- 注册按钮 ，submit 定义提交按钮。提交按钮会把表单数据发送到服务器。 -->
+		<input type="submit" value="朕要注册">
+		<!-- 爱好，多选 -->
+		爱好：<input type="checkbox" name="hobby" value="keyakizaka">欅坂 <input
+			type="checkbox" name="hobby" value="nogizaka">乃木坂<br>
+	</form>
+</body>
+</html>

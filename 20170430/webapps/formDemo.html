@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- 需求：建登陆页面，用form标签建HTML表单，用input标签再form标签里面建各种按钮 -->
+<head>
+<meta charset="UTF-8">
+<title>登陆页面</title>
+</head>
+<body>
+	<h1>用户注册</h1>
+	<!-- form标签有三个属性，action填网址，提交数据给哪个服务器处理。method填get/post。enctype规定表单数据在发送到服务器前应该如何编码 -->
+	<form action="" method="post"
+		enctype="application/x-www-form-urlencoded">
+		<!-- 注意，input是单标签，建用户名 。表单元素提交必须用name属性，name属性定义input元素的名称-->
+		用户名：<input type="text" name="username"> <br>
+		<!-- 建密码 -->
+		密码：<input type="password" name="password"><br>
+		<!-- 性别，有三个选项，单选，默认保密 -->
+		性别：<input type="radio" name="gender" value="男">男 <input
+			type="radio" name="gender" value="女">女 <input type="radio"
+			name="gender" value="保密" checked>保密<br>
+		<!-- 爱好，多选 -->
+		爱好：<input type="checkbox" name="hobby" value="keyakizaka">欅坂 <input
+			type="checkbox" name="hobby" value="nogizaka">乃木坂<br>
+		<!-- 城市，下拉框,若在name后加size="X"显式X个选项,若在name后加multiple="multiple"在网页上按住ctrl或shift或ctrl+shift可选多项 -->
+		城市：<select name="city" size="4" multiple="multiple">
+			<option value="北京">北京</option>
+			<option value="上海">上海</option>
+			<option value="广州">广州</option>
+			<option value="深圳">深圳</option>
+		</select> <br>
+		<!-- 头像，传文件 -->
+		头像：<input type="file" name="headImage"><br>
+		<!-- 简介，评论文本 -->
+		<!-- text 定义单行的输入字段，用户可在其中输入文本。默认宽度为 20 个字符。  -->
+		自我简介：<input type="text" name="self"><br>
+
+		<!-- <textarea> 标签定义多行的文本输入控件。文本区中可容纳无限数量的文本，其中的文本的默认字体是等宽字体（通常是 Courier）。
+                            可以通过 cols 和 rows 属性来规定 textarea 的尺寸，不过更好的办法是使用 CSS 的 height 和 width 属性。
+		 -->
+		自我评价：
+		<textarea cols="3" rows="3"></textarea><br>
+		<!-- 注册按钮 ，submit 定义提交按钮。提交按钮会把表单数据发送到服务器。 -->
+        <input type="submit" value="朕要注册">
+		<!-- 按钮，重置 -->
+		<input type="reset" value="重置">
+		<!-- 按钮，有一个事件（输出你所访问的网站已经消失） -->
+        <input type="button" value="手气真好" onclick="alert('你所访问的网站已经消失')"/>
+	</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 需求1：利用a标签的href属性和target属性演示超链接的锚点创建，指向一个文档地址
+（1） -->
+<!-- 需求2： 模仿网络书，利用a标签的href属性和name属性建文档内部的书签，用div标签中的style属性建每章的具体内容-->
+<title>a标签的两种运用</title>
+</head>
+<body>
+	<!-- 需求1 记住中间要添加文字，若不加target属性，在浏览器中默认在本页面打开-->
+	<a href="C:\Users\java\Downloads\46.jpg"> 点我啊</a>
+	<a href="C:\Users\java\Downloads\46.jpg" target="_blank"> 快点我啊</a>
+	<br>
+	<!-- 需求2 -->
+	<a href="#anchor1">序言 </a>
+	<a href="#anchor2">入门</a>
+	<a href="#anchor3">放弃 </a>
+	<a name="anchor1"><div style="height:900px;background-color:red">进入火坑</div></a>
+	<a name="anchor2"><div style="height:900px;background-color:green">刀山火海</div></a>
+	<a name="anchor3"><div style="height:900px;background-color:orange">脱离苦海</div></a>
+</body>
+</html>

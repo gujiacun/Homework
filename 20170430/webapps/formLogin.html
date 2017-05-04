@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<!-- 需求：完整开发用户注册界面 ,难点在于整个东西是表格，内部有三个表单组成-->
+<head>
+<meta charset="UTF-8">
+<!-- （1）title输入 -->
+<title>用户注册</title>
+</head>
+<body>
+	<table border="1" cellspacing="0" cellpading="0">
+		<thead>
+		</thead>
+		<tbody>
+			<!-- (1)这行跨列，1.会员登录名和密码 。设置边界线和间距-->
+			<tr>
+				<td colspan="3">1.会员登录名和密码</td>
+			</tr>
+			<!-- 表列，用户名 -->
+			<tr>
+				<td align="right">用户名：</td>
+				<td><input type="text" name="username"></td>
+				<!-- required 属性规定必需在提交之前填写输入字段。如果使用该属性，则字段是必填（或必选）的。
+注释：required 属性适用于以下 <input> 类型：text, search, url, telephone, email, password, date pickers, number, checkbox, radio 以及 file。
+required 属性是 HTML5 中的新属性。 -->
+				<td><input type="button" value="检测用户名" required><font
+					color="blue">5-15位，请使用英文(a-z)、数字(0-9)</font></td>
+			</tr>
+			<!-- 表列，密码 -->
+			<tr>
+				<td align="right">密码：</td>
+				<td><input type="text" name="password"></td>
+				<td><font color="blue">5-15位，请使用英文(a-z)、数字(0-9)注意区分大小写;</font><br>
+				<font color="blue"> 密码不能与登陆名相同;易记;难猜</font></td>
+			</tr>
+			<!-- 表列，再次输入密码 -->
+			<tr>
+				<td align="right">再次输入密码：</td>
+				<td><input type="text" name="password2"></td>
+				<td><font color="blue">两次输入的密码必须相同</font></td>
+			</tr>
+			<!-- (2)这行跨列，2.姓名和联系方式 。设置边界线和间距-->
+			<tr>
+				<td colspan="3">2.姓名和联系方式</td>
+			</tr>
+			<!-- 表列，真实姓名-->
+			<tr>
+				<td align="right">真实姓名：</td>
+				<td><input type="text" name="realName"></td>
+				<td><input type="radio" name="gender" value="先生" checked>先生
+					<input type="radio" name="gender" value="先生">小姐</td>
+			</tr>
+			<!-- 表列，电子邮箱 -->
+			<tr>
+				<td align="right">电子邮箱：</td>
+				<td><input type="text" name="rwalName"></td>
+				<td><font color="red">非常重要 ！</font><br>
+				<font color="blue">这是客户与您联系的首选方式，请一点填写真实</font></td>
+			</tr>
+			<!-- 表列，固定电话 -->
+			<tr>
+				<td align="right">固定电话：</td>
+				<td><input type="text" name="rwalName"></td>
+				<td><font color="blue">区号+电话号码</font></td>
+			</tr>
+			<!-- 表列，公司所在地。两个单选的下拉菜单 -->
+			<tr>
+				<td align="right">公司所在地：</td>
+				<td colspan="2"><select>
+						<option value="bj">北京</option>
+						<option value="gz">广州</option>
+						<option value="sh">上海</option>
+						<option value="sz">深圳</option>
+				</select> <select>
+						<option value="e">东城</option>
+						<option value="s">南城</option>
+						<option value="w">西城</option>
+						<option value="n">被城</option>
+				</select></td>
+
+			</tr>
+			<!-- 表列，街道地址 -->
+			<tr>
+				<td align="right">街道地址：</td>
+				<td colspan="3"><input type="text" required /> <font
+					color="blue">填写县(区),街道,门牌号</font></td>
+			</tr>
+			<tr>
+				<!-- 表列，传真号码 -->
+				<td align="right">传真号码：</td>
+				<td class="td_input" colspan="2"><input type="number" required />
+				</td>
+			</tr>
+			<!-- 表列，手机号码 -->
+			<tr>
+				<td align="right">手机号码：</td>
+				<td class="td_input" colspan="2"><input type="number" required />
+				</td>
+			</tr>
+
+			<!-- 表列，邮政编码 -->
+			<tr>
+				<td align="right">邮箱编码：</td>
+				<td class="td_input" colspan="2"><input type="number" required />
+				</td>
+			</tr>
+
+			<!-- (3)这行跨列，3.公司名称和主营业务 。设置边界线和间距 -->
+			<tr>
+				<td colspan="3">3.公司名称和主营业务</td>
+			</tr>
+			<!-- 贵公司名称 -->
+			<tr>
+				<td align="right">贵公司名称：</td>
+				<td><input type="text" required /></td>
+				<td><font color="blue">请填写在工商局注册的公司的全称；</font><br> <font
+					color="blue">无商号的个图经营者填写执照上的姓名，如：张三（个体经营）</font></td>
+			</tr>
+			<!-- 您的职位 -->
+			<tr>
+				<td align="right">你的职位：</td>
+				<td><input type="text" required /></td>
+				<td></td>
+			</tr>
+			<!-- 主营行业。一个单选的下拉菜单 -->
+			<tr>
+				<td align="right">主营行业：</td>
+				<td><select>
+						<option>电子电工</option>
+						<option>洗脚</option>
+						<option>抠脚</option>
+						<option>按摩</option>
+						<option>养生保健</option>
+				</select></td>
+				<td><font color="blue">请正确选择。您会收到该行业，该产品的供求信息</font></td>
+			</tr>
+			<!-- 主营产品服务 -->
+			<tr>
+				<td align="right">主营产品/服务：</td>
+				<td colspan="2"><input type="text" required /> <font
+					color="blue">3个主要相关产品/服务名，最少要填一个。例如：太阳帽，拉链，布料</font></td>
+			</tr>
+			<!-- 公司网址。一开始就有http://在里面-->
+			<tr>
+				<td align="right">公司网址：</td>
+				<td colspan="2"><input type="text" value="http://" required />
+				</td>
+			</tr>
+			<!-- 最后一个按钮，确认提交-->
+			<tr>
+				<td colspan="3"><font color="white"><input type="submit"
+						value="确认提交"></font></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
