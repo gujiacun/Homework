@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0" metadata-complete="false">
+
+	<display-name>Welcome to Tomcat</display-name>
+	<description>
+     Welcome to Tomcat
+  </description>
+	<servlet>
+		<servlet-name>Servlet1</servlet-name>
+		<!-- com._520it_._01_forwrd.Servlet1 -->
+		<!-- com._520it_._02_redirect.Servlet1 -->
+		<servlet-class>com._520it_._04_scope.ScopeServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet1</servlet-name>
+		<url-pattern>/st</url-pattern>
+	</servlet-mapping>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/jsp/404.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/jsp/500.jsp</location>
+	</error-page>
+</web-app>
