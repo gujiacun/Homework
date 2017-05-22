@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+ <package name="vsPkg" extends="struts-default" namespace="/">
+ <!--   <global-results>
+        <result name="hello" type="dispatcher">
+            /index.jsp
+        </result>
+    </global-results>
+    <action name="hello" class="com._520it._01_hello.HelloAction" method="execute" >
+        <result name="hello2" type="dispatcher">
+            <param name="location">/index.jsp</param>
+        </result>
+    </action>   -->
+    <action name="vs" class="com._520it._03_valueStack.ValueStackAction" method="execute" >
+ <!--         <result name="fuck" type="dispatcher">
+            <param name="location">/index.jsp</param>
+        </result>   -->
+        <result name="SUCCESS">/vs.jsp</result>
+    </action>
+<!--      <action name="keyaki" class="com._520it._01_hello.HelloAction03">
+        <result>/index.jsp</result>
+    </action>   -->
+<!--    <action name="keyaki_*" class="com._520it._01_hello.HelloAction03" method="{1}"></action>  -->
+<!--     <action name="*_*" class="com._520it._01_hello.{1}" method="{2}"></action>  -->
+ </package>
+
+</struts>

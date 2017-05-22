@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- <constant name="struts.action.extension" value="xxx,neld"></constant> -->
+	<!--<include file="com\_520it\_01_hello\struts-hello.xml"></include> -->
+	<!-- <include file="com\_520it\_02_parameter\struts-param.xml"></include> -->
+	<!-- <include file="com\_520it\_03_valueStack\struts-valueStack.xml"></include> -->
+	<package name="employeePkg" extends="struts-default" namespace="/">
+	   <action name="employee_*" class="com.xmg.pss.web.action.EmployeeAction" method="{1}">
+	       <result name="list">/WEB-INF/views/employee/list.jsp</result>
+	       <result type="redirectAction">employee</result>
+	       <result name="input" type="dispatcher">/WEB-INF/views/employee/edit.jsp</result>
+	   </action>
+	</package>
+	<!-- 默认主题 -->
+	<constant name="struts.ui.theme" value="simple"></constant>
+	<!-- 打开如下代码后，可以打印出更详细的错误信息 -->
+	<constant name="struts.devMode" value="true"></constant>
+	<!-- 设置浏览器是否缓存静态内容,默认值为true(生产环境下使用),开发阶段最好关闭 -->
+	<constant name="struts.serve.static.browserCache" value="false"></constant>
+	<!-- 当struts的配置文件修改后,系统是否自动重新加载该文件,默认值为false(生产环境下 使用),开发阶段最好打开 -->
+	<constant name="struts.configuration.xml.reload" value="true"></constant>
+	<!-- 调用Action中的多个方法时，有两个方法.法一:在struts.xml中开启动态方法调用 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+</struts>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+	<bean id="empDAO" class="com.xmg.pss.dao.impl.EmployeeDAOImpl" type="singleton" ></bean>
+	<bean id="departServlet" class="com.xmg.pss.service.impl.DepartmentServiceImpl">
+		<property id="empDAO" ref="empDAO"></property>
+	</bean>
+</beans>

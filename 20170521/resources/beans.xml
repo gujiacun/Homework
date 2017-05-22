@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+<bean id="employee" class="com.xmg.pss.dao.impl.EmployeeDAOImpl" type="singleton"></bean>
+<bean id="department" class="com.xmg.pss.dao.impl.DepartmentDAOImpl" type="singleton">
+    <property id="employee" ref="employee" />
+</bean>
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
